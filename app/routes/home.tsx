@@ -1,13 +1,13 @@
+import { Feed } from '../components/Feed';
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Instagram Mock" },
+    { name: "description", content: "Welcome to this awesome Instagram Mock!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <Feed />;
 }
